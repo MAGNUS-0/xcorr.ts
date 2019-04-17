@@ -320,21 +320,3 @@ interface Object {
     re: number;
     im: number;
 }
-
-
-// let gccphat = new Gccphat(44100);
-// console.log(gccphat);
-
-// let buffer0 = new Float32Array(400);
-// let buffer1 = new Float32Array(buffer0.length);
-
-// for (let index = 0; index < buffer0.length; index++) {
-//     buffer0[index] = (Math.random() * 2) - 1;
-//     buffer1[index] = (Math.random() * 2) - 1;
-// }
-
-// setTimeout(()=>{
-//     var result = gccphat.xcorr(buffer0, buffer1);
-//     console.log('gccphat_ts', result)
-// }, 2000)
-
