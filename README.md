@@ -4,7 +4,7 @@ A web based client side cross-correlation (for audio).
 
 # What is xcorr.ts?
 
-It is a cross-correlation implementation built entirely for client-side web applications. The project is written in TypeScript but uses [WebPack](https://webpack.js.org/) and [ts-loader](https://github.com/TypeStrong/ts-loader) to output a JavaScript callable interface.
+It is a cross-correlation implementation built entirely for client-side web applications. The project is written in TypeScript but uses [WebPack](https://webpack.js.org/) (as well as [unminified-webpack-plugin](https://www.npmjs.com/package/unminified-webpack-plugin)) and [ts-loader](https://github.com/TypeStrong/ts-loader) to output a JavaScript callable interface.
 
 There are two underlying cross-correlation implementations when calling `xcorr.ts`:
 
