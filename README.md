@@ -37,7 +37,7 @@ The cross-correlation process can then be called asynchronously on two `Float32A
 // buffer0: Float32Array 
 // buffer1: Float32Array
 // correlatedBuffer: Float32Array
-const correlatedBuffer = await xcorr.correlated(buffer0, buffer1);
+const correlatedBuffer = await xcorr.correlate(buffer0, buffer1);
 ```
 
 Or if required, a time-lag estimate can be called directly and the correlated buffer can be ignored:
