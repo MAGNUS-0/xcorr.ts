@@ -27,13 +27,13 @@ Depending on the method of cross-correlation, certain extra dependencies will ne
 
 On including this, an `xcorr` object will be appended to the window as a singleton that can be used. By default the mode will be set to `WA_XCORR`, but can be set explicitly:
 
-```
+```javascript
 xcorr.setMode('waxcorr'); // or 'gccphat'
 ```
 
 The cross-correlation process can then be called asynchronously on two `Float32Array` buffers:
 
-```
+```javascript
 // buffer0: Float32Array 
 // buffer1: Float32Array
 // correlatedBuffer: Float32Array
@@ -42,7 +42,7 @@ const correlatedBuffer = await xcorr.correlated(buffer0, buffer1);
 
 Or if required, a time-lag estimate can be called directly and the correlated buffer can be ignored:
 
-```
+```javascript
 // buffer0: Float32Array 
 // buffer1: Float32Array
 // timeLag: number
@@ -58,7 +58,7 @@ As the GCC-PHAT approach requires frequency domain transformation and manipulati
 ### [PulseFFT](https://github.com/AWSM-WASM/PulseFFT)
 Currently `PulseFFT` is setup asynchronously and requires a function being appended to the window so that `xcorr.ts` can load it correctly. Firstly the `index.js` script supplied with `PulseFFT` must be modified slightly to have the following appended:
 
-```
+```javascript
 // pulse/index.js
 window.initPulse = loadPulse;
 ```
@@ -79,12 +79,6 @@ Mathjs is used for extra complex data type manipulation within `xcorr.ts` and is
 <script src="math.js" type="text/javascript"></script>
 ```
 
-# Dependencies
-
-Here is a full list of the dependencies used in making `xcorr.ts`:
-
-* PulseFFT: WebAssembly Fourier Transform 
-* Mathjs: Extensive math library for javascript
 
 # Developing
 
