@@ -37,6 +37,14 @@ class Xcorr {
      */
     public async correlate (buffer0: Float32Array, buffer1: Float32Array) {
 
+        if (buffer0.length != buffer1.length) {
+            if (buffer0.length > buffer1.length) {
+                buffer0 = buffer0.slice(0, buffer1.length);
+            } else {
+                buffer1 = buffer1.slice(0, buffer1.length);
+            }
+        }
+
         switch (this.prewhiten) {
             case (PrewhiteningType.NONE):
                 break;
