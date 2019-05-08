@@ -79,11 +79,6 @@ Mathjs is used for extra complex data type manipulation within `xcorr.ts` and is
 <script src="math.js" type="text/javascript"></script>
 ```
 
-
-# Developing
-
-**Coming Soon!**
-
 # Author
 
 Magnus Woodgate
