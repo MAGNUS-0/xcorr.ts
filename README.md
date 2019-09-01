@@ -1,5 +1,5 @@
 # xcorr.ts
-A web based client side cross-correlation (for audio).
+A web based client side cross-correlation (using WebAudio).
 
 
 # What is xcorr.ts?
